@@ -1,5 +1,5 @@
 module GeometricUnitsChainRules
 
-# Write your package code here.
+include("chainrules.jl")
 
 end

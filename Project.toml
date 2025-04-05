@@ -1,13 +1,21 @@
 name = "GeometricUnitsChainRules"
 uuid = "f1b14d1f-94f1-4a9b-ad19-1ced1b2bd9ec"
 authors = ["Abhimanyu Susobhanan <abhisrkckl@gmail.com>"]
-version = "1.0.0-DEV"
+version = "0.0.0-DEV"
+
+[deps]
+ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+GeometricUnits = "43c95830-f66f-43f3-8298-be5f3865d5b9"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
+ChainRulesCore = "1.25.1"
+Zygote = "0.7.6"
 julia = "1.10"
 
 [extras]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["BenchmarkTools", "Test"]
